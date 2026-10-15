@@ -295,8 +295,7 @@ void initRtos(void) {
     }
 }
 
-// The first thread created must be the idle task: it has to stay ready at all
-// times and can't be killed.
+// The first thread created must be the idle task: it has to stay ready at all times and cannot be killed
 bool createThread(_fn fn, const char name[], uint8_t priority, uint32_t stackBytes) {
     uint8_t i = taskCount;
     if (rtosStarted || i >= MAX_TASKS || priority >= NUM_PRIORITIES
