@@ -1,0 +1,37 @@
+# CMake build output
+build/
+
+# Compiled objects and firmware images
+*.o
+*.obj
+*.d
+*.su
+*.a
+*.lib
+*.elf
+*.out
+*.bin
+*.hex
+*.map
+
+# Code Composer Studio / Eclipse / Theia project state
+.theia/
+.metadata/
+.settings/
+.project
+.cproject
+.ccsproject
+Debug/
+Release/
+
+# VS Code: keep only the shared debug config, settings and register file
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/*.svd
+
+# Editor and OS files
+*.swp
+*~
+.DS_Store
+Thumbs.db

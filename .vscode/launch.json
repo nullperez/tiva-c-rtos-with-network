@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Requires the Cortex-Debug extension (marus25.cortex-debug).
+            // Build first with `cmake --build build`.
+            "name": "Debug TM4C (OpenOCD)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/tiva_c_rtos_net.elf",
+            "configFiles": ["board/ti_ek-tm4c123gxl.cfg"],
+            "svdFile": "${workspaceFolder}/.vscode/tm4c123gxl.svd",
+            "runToEntryPoint": "main"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    // xPack OpenOCD; ST's OpenOCD on the PATH lacks the TI board configs.
+    "cortex-debug.openocdPath.windows": "C:/xpack/openocd/bin/openocd.exe",
+
+    // Keep the CMake Tools extension from configuring a Visual Studio build.
+    "cmake.generator": "Unix Makefiles",
+    "cmake.configureSettings": {
+        "CMAKE_MAKE_PROGRAM": "C:/ti/ccs2101/ccs/utils/bin/gmake.exe"
+    }
+}
